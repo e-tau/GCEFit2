@@ -1,0 +1,23 @@
+Package: GCEFit2
+Type: Package
+Title: Positive Gram-Charlier and Edgeworth Density Fitting
+Version: 1.0.0
+Authors@R: 
+    person("Emanuele", "Taufer", email = "emanuele.taufer@unitn.it", role = c("aut", "cre"))
+Description: 
+    Implements positive Gram-Charlier and Edgeworth density 
+    approximations, including squared-polynomial transformations 
+    and extended Gram-Charlier estimation procedures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    stats,
+    graphics,
+    maxLik,
+    MultiStatM,
+    GeneralizedHyperbolic,
+    quadprog,
+    EQL
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
