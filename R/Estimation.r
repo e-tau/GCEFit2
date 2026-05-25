@@ -402,7 +402,7 @@ Min_K_Gy <- function(start = NULL, cum) {
   res <- stats::optim(
     par = start,
     fn = objective_function_BellH_K,
-    cum = cum,
+    cum = cum[3:K],
     lower = lower_bounds,
     upper = upper_bounds,
     method = "L-BFGS-B"
