@@ -216,7 +216,8 @@ HermSqu <- function(params){
 
 
 HermMom <- function(params, cum){
-  ####### left side 
+  ####### left side
+  K <- length(params)
   Bvec <- NULL
   theta <- NULL
   theta[1] <- params[1]
