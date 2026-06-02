@@ -446,7 +446,7 @@ Min_K_adaptive <- function(start, cum,
   for (attempt in seq_len(max_attempts)) {
     
     cum_try <- original_cum
-    cum_try[-c(1, 2)] <- factor * original_cum[-c(1, 2)]
+    cum_try[-c(1, 2, 3)] <- factor * original_cum[-c(1, 2, 3)]
     
     fit <- tryCatch(
       Min_K(start, cum_try),
